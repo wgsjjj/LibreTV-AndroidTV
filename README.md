@@ -4,6 +4,8 @@
 
 适配 Android 5.0 及以上，手机、平板也能装。
 
+**当前稳定版：v2.0 正式版（2026-11-04）** · [前往下载](https://github.com/wgsjjj/LibreTV-TV/releases/tag/v2.0)
+
 > 本应用的创作灵感来自 [LibreTV](https://github.com/LibreSpark/LibreTV) 项目。
 > 本仓库用于发布版本与功能说明，不包含源代码。
 
@@ -13,7 +15,7 @@
 
 ### 浏览与搜索
 
-- **豆瓣热榜**：推荐页取豆瓣实时热榜（电影 / 剧集 / 综艺 / 动漫），带真实豆瓣评分
+- **推荐页**：采集站最新片单，按片名匹配补充豆瓣真实评分
 - **分类浏览**：电影、电视剧、动漫、综艺四大分类，支持按类型、地区、年份、排序筛选
 - **跨源搜索**：一次搜索并发查询所有已添加的源，结果按片名去重合并，同名优先
 - **拼音首字母**：输入 `zzx` 能搜到「蜘蛛侠」
@@ -34,7 +36,7 @@
 
 - **自定义源**：支持 m3u / txt 格式的直播源地址，自己添加、自己管理
 - **分组与节目单**：频道分组、EPG 节目单、台标显示（都可关闭）
-- **遥控器换台**：OK 键呼出半透明频道列表，左右键直接换台
+- **遥控器换台**：OK 键呼出半透明频道列表，左右 / 上下键直接换台
 - **断流处理**：低延迟零缓存策略，断流自动重试，长缓冲自适应
 
 ### 手机推送
@@ -55,16 +57,15 @@
 
 ## 下载与安装
 
-**稳定版发布后会放在本仓库的 [Releases](https://github.com/wgsjjj/LibreTV-TV/releases) 页面。**
+**当前稳定版：[v2.0 正式版](https://github.com/wgsjjj/LibreTV-TV/releases/tag/v2.0)**，发布于 2026-11-04。
 
-当前版本仍在完善中，暂未提供下载。
+在 [Releases](https://github.com/wgsjjj/LibreTV-TV/releases) 页面下载 `LibreTV-TV-v2.0.apk`，或直接点：
+[下载 v2.0 正式版](https://github.com/wgsjjj/LibreTV-TV/releases/download/v2.0/LibreTV-TV-v2.0.apk)。
 
-发布后的安装方式：
-
-下载 `LibreTV-native-signed.apk`，拷贝到 U 盘插到电视上安装，或用 adb 安装：
+拷贝到 U 盘插到电视上安装，或用 adb 安装：
 
 ```
-adb install LibreTV-native-signed.apk
+adb install LibreTV-TV-v2.0.apk
 ```
 
 **注意**：目前签名不固定，覆盖安装可能提示「签名不一致」，需要先卸载旧版再装。
