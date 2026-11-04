@@ -4,7 +4,7 @@
 
 适配 Android 5.0 及以上，手机、平板也能装。
 
-**当前稳定版：v2.0 正式版（2026-11-04）** · [前往下载](https://github.com/wgsjjj/LibreTV-TV/releases/tag/v2.0)
+**当前稳定版：v2.0 正式版（2026-11-04）** · [前往下载](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v2.0)
 
 > 本应用的创作灵感来自 [LibreTV](https://github.com/LibreSpark/LibreTV) 项目。
 > 本仓库用于发布版本与功能说明，不包含源代码。
@@ -119,10 +119,10 @@
 
 ## 下载与安装
 
-**当前稳定版：[v2.0 正式版](https://github.com/wgsjjj/LibreTV-TV/releases/tag/v2.0)**，发布于 2026-11-04。
+**当前稳定版：[v2.0 正式版](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v2.0)**，发布于 2026-11-04。
 
-在 [Releases](https://github.com/wgsjjj/LibreTV-TV/releases) 页面下载 `LibreTV-TV-v2.0.apk`，或直接点：
-[下载 v2.0 正式版](https://github.com/wgsjjj/LibreTV-TV/releases/download/v2.0/LibreTV-TV-v2.0.apk)。
+在 [Releases](https://github.com/wgsjjj/LibreTV-AndroidTV/releases) 页面下载 `LibreTV-TV-v2.0.apk`，或直接点：
+[下载 v2.0 正式版](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/download/v2.0/LibreTV-TV-v2.0.apk)。
 
 拷贝到 U 盘插到电视上安装，或用 adb 安装：
 
