@@ -4,7 +4,7 @@
 
 适配 Android 5.0 及以上，手机、平板也能装。
 
-**当前稳定版：v2.2.4（2026-11-05）** · [前往下载](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v2.2.4)
+**当前稳定版：v2.1（2026-11-05）** · [前往下载](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v2.1)
 
 > 本应用的创作灵感来自 [LibreTV](https://github.com/LibreSpark/LibreTV) 项目。
 > 本仓库用于发布版本与功能说明，不包含源代码。
@@ -151,15 +151,15 @@
 
 ## 下载与安装
 
-**当前稳定版：[v2.2.4](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v2.2.4)**，发布于 2026-11-05。
+**当前稳定版：[v2.1](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v2.1)**，发布于 2026-11-05。
 
-在 [Releases](https://github.com/wgsjjj/LibreTV-AndroidTV/releases) 页面下载 `LibreTV-TV-v2.2.4.apk`，或直接点：
-[下载 v2.2.4](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/download/v2.2.4/LibreTV-TV-v2.2.4.apk)。
+在 [Releases](https://github.com/wgsjjj/LibreTV-AndroidTV/releases) 页面下载 `LibreTV-TV-v2.1.apk`，或直接点：
+[下载 v2.1](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/download/v2.1/LibreTV-TV-v2.1.apk)。
 
 拷贝到 U 盘插到电视上安装，或用 adb 安装：
 
 ```
-adb install LibreTV-TV-v2.2.4.apk
+adb install LibreTV-TV-v2.1.apk
 ```
 
 **注意**：目前签名不固定，覆盖安装可能提示「签名不一致」，需要先卸载旧版再装（片源、收藏、播放历史会一起清掉，装好重新添加即可）。
