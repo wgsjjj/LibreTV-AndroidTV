@@ -4,7 +4,7 @@
 
 适配 Android 5.0 及以上，手机、平板也能装。
 
-**当前稳定版：v2.1（2026-11-05）** · [前往下载](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v2.1)
+**当前稳定版：v2.2（2026-11-05）** · [前往下载](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v2.2)
 
 > 本应用的创作灵感来自 [LibreTV](https://github.com/LibreSpark/LibreTV) 项目。
 > 本仓库用于发布版本与功能说明，不包含源代码。
@@ -143,6 +143,7 @@
 ### 其他
 
 - 顶栏滚动公告栏（多条轮换、按等级配色），OK 打开全文弹窗，支持远程更新与过期下架
+- 重要公告启动弹窗：标了「重要」的公告（版本更新之类）开 App 就弹，图文并排，点「我知道了」后不再打扰；发新公告换个编号会重新弹
 - 调试日志：悬浮窗实时看最近 7 行，全屏浮层显示设备 / 版本 / 解码信息，可导出 txt
 - 反馈弹窗：公众号二维码，用不惯或有问题可以直接留言
 - 横屏锁定、电视 Launcher 入口，仅申请网络相关权限
@@ -151,15 +152,15 @@
 
 ## 下载与安装
 
-**当前稳定版：[v2.1](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v2.1)**，发布于 2026-11-05。
+**当前稳定版：[v2.2](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v2.2)**，发布于 2026-11-05。
 
-在 [Releases](https://github.com/wgsjjj/LibreTV-AndroidTV/releases) 页面下载 `LibreTV-TV-v2.1.apk`，或直接点：
-[下载 v2.1](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/download/v2.1/LibreTV-TV-v2.1.apk)。
+在 [Releases](https://github.com/wgsjjj/LibreTV-AndroidTV/releases) 页面下载 `LibreTV-TV-v2.2.apk`，或直接点：
+[下载 v2.2](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/download/v2.2/LibreTV-TV-v2.2.apk)。
 
 拷贝到 U 盘插到电视上安装，或用 adb 安装：
 
 ```
-adb install LibreTV-TV-v2.1.apk
+adb install LibreTV-TV-v2.2.apk
 ```
 
 **注意**：目前签名不固定，覆盖安装可能提示「签名不一致」，需要先卸载旧版再装（片源、收藏、播放历史会一起清掉，装好重新添加即可）。
