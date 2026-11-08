@@ -4,7 +4,9 @@
 
 适配 Android 5.0 及以上，手机、平板也能装。
 
-**当前稳定版：v2.5（2026-11-08）** · [前往下载](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v2.5)
+**当前版本：v2.5.16（2026-11-08）** · [前往下载](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v2.5.16)
+
+> **v2.5.16 更新**：优化首次导入点播源后的推荐加载；搜索键盘改为六列，支持豆瓣与猫眼热搜换一批，优化搜索结果焦点及详情返回；改进首页缓存、节目单和台标缓存。加载速度随网络与设备而异。
 
 > **v2.5 重点**
 >
@@ -181,20 +183,20 @@
 
 ## 下载与安装
 
-**当前稳定版：[v2.5](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v2.5)**，发布于 2026-11-08。
+**当前版本：[v2.5.16](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v2.5.16)**，发布于 2026-11-08。
 
-在 [Releases](https://github.com/wgsjjj/LibreTV-AndroidTV/releases) 页面下载 `LibreTV-TV-v2.5.apk`，或直接点：
-[下载 v2.5](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/download/v2.5/LibreTV-TV-v2.5.apk)。
+在 [Releases](https://github.com/wgsjjj/LibreTV-AndroidTV/releases) 页面下载 `LibreTV-TV-v2.5.16.apk`，或直接点：
+[下载 v2.5.16](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/download/v2.5.16/LibreTV-TV-v2.5.16.apk)。
 
 拷贝到 U 盘插到电视上安装，或用 adb 安装：
 
 ```
-adb install LibreTV-TV-v2.5.apk
+adb install LibreTV-TV-v2.5.16.apk
 ```
 
-- 版本：`2.5`（versionCode `119`），约 32 MB，Android 5.0 及以上，`arm64-v8a` / `armeabi-v7a`
+- 版本：`2.5.16`（versionCode `135`），约 32 MB，Android 5.0 及以上，`arm64-v8a` / `armeabi-v7a`
 - 签名 SHA-256：`f4be2ee27615f2eaa019b7d87d92a728994f0ef949ac82557ee7bcc709096521`
-- SHA-256：`2042b92d1a5a665598ce9d78c5caee11016e3e8c31cc980fda589d8e679cf993`
+- SHA-256：`9e58f7754024dd1af67e307dd6e5b797e856173ec7264731d8c4c1f3c47adf18`
 
 **从 v2.4 升级可以直接覆盖安装**，签名与 v2.4 一致，片源、收藏、播放历史都会保留，不用先卸载。
 
