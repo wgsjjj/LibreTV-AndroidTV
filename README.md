@@ -4,9 +4,21 @@
 
 适配 Android 5.0 及以上，手机、平板也能装 —— 手机上有专门的竖屏触屏界面（v2.7 起），横过来自动全屏。
 
-**当前版本：v2.7.0（2026-11-10）** · [前往下载](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v2.7.0)
+**当前版本：v2.7.1（2026-11-11）** · [前往下载](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v2.7.1)
 
-> **v2.7 更新**：这一版交付**手机端整套界面**。同一个安装包装到手机上自动切成竖屏布局，横过来直接全屏播放；手机直播页一体化、浮层改磨砂玻璃、左右分区手势调亮度和音量；搜索页按「历史 + 推荐词 + 热搜榜」重做。电视端功能不变。
+> **v2.7.1 更新**：搜索重做，**电视端和手机端用同一套多源聚合逻辑**。
+>
+> - **电视端搜不到**：以前只问「测速最快的那一个源」，而采集站之间片库不一样 —— 实测新浪 / 光速 / 红牛 / 最大 根本不支持拼音搜索，暴风、量子支持。恰好最快的是不支持拼音的那个，搜「YZ」就只有 1~3 条无关结果。现在全源并发，主源先上屏，其余陆续并进来
+>
+> - **手机端搜不全**：去重键复用了详情页的片名归一函数，那个函数会把「第X季」整段删掉 ——「余罪」和「余罪第二季」变成同一个 key，后者直接被丢弃。现在保留季号，两季都在
+>
+> - **联想词**：同样改多源（最多 8 个源，2.5 秒/源，3.5 秒收口），拼音输入也能联想出中文片名
+>
+> - **详情页「相关剧集」**：以前只在当前这一个源里找其他季，详情要是恰好来自「只有第一季」的站点就永远看不到第二季；现在跨所有源找，同一季只留一条
+>
+> - 结果按贴合度排序（同名 → 去季号同名 → 前缀 → 包含，同档先第一季），纯字母关键词走拼音分档
+>
+> 上一版 v2.7.0 的**手机端整套界面**（竖屏布局、横过来自动全屏、磨砂浮层、左右分区手势、搜索页重做）全部保留。
 
 > **v2.7 重点**
 >
@@ -200,20 +212,20 @@
 
 ## 下载与安装
 
-**当前版本：[v2.7.0](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v2.7.0)**，发布于 2026-11-10。
+**当前版本：[v2.7.1](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v2.7.1)**，发布于 2026-11-11。
 
-在 [Releases](https://github.com/wgsjjj/LibreTV-AndroidTV/releases) 页面下载 `LibreTV-TV-v2.7.0.apk`，或直接点：
-[下载 v2.7.0](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/download/v2.7.0/LibreTV-TV-v2.7.0.apk)。
+在 [Releases](https://github.com/wgsjjj/LibreTV-AndroidTV/releases) 页面下载 `LibreTV-TV-v2.7.1.apk`，或直接点：
+[下载 v2.7.1](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/download/v2.7.1/LibreTV-TV-v2.7.1.apk)。
 
 拷贝到 U 盘插到电视上安装，或用 adb 安装：
 
 ```
-adb install LibreTV-TV-v2.7.0.apk
+adb install LibreTV-TV-v2.7.1.apk
 ```
 
-- 版本：`2.7.0`（versionCode `157`），约 33 MB，Android 5.0 及以上，`arm64-v8a` / `armeabi-v7a`
+- 版本：`2.7.1`（versionCode `158`），约 33 MB，Android 5.0 及以上，`arm64-v8a` / `armeabi-v7a`
 - 签名 SHA-256：`cc66c9268c8e2adb22d37cd9f2a07f8e47fa134b0551ee08b8c4b91d9cfa67e2`
-- 文件 SHA-256：`984817562b2fef93bf11c423116c7eaca35264f09747cbac6143bb251f1b0138`
+- 文件 SHA-256：`7316f0c5b711d925f43da0fcf259f766fb00648ecabcfdf9129515cc0de0ffbc`
 
 > **本次签名与 v2.6 一致，可以直接覆盖安装**，片源、收藏、播放历史都会保留。
 > 只有从 v2.5 / v2.5.16 或更早版本升级时才会提示「签名不一致」，那种情况需要先卸载（片源与收藏会一起清掉，装好后重新添加即可）。
