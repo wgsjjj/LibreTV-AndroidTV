@@ -19,7 +19,16 @@
 | 👪 家长控制 | PIN 锁、可用时长、退出即上锁、扫码设置 |
 | ⚙️ 其他 | 开机自启与启动页选择、遥控器按键自定义、公告条、调试日志与导出、横屏锁定与电视 Launcher 入口 |
 
-**当前版本：v2.8.4（2026-11-13）** · [前往下载](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v2.8.4)
+**当前版本：v2.9.0（2026-11-15）** · [前往下载](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v2.9.0)
+
+> **v2.9.0 更新**：分类页一次给足一百多部，搜索框一敲字就出建议，点投屏按钮立刻开始找设备、投上电视手机马上静音。
+>
+> - **分类页不再停在二三十部**：以前「电影」滑两下就到底 —— 分类页只问豆瓣要数据，而豆瓣那个片单接口一页 20 条、`total` 就是 30，再多问也没有，采集站根本没被接上。现在豆瓣那 30 部先上屏（海报 0.3 秒一张），紧接着用采集站按**子分类并发**补到 **120 部**，滑到底还会自动续两页直到片源翻到头；手机端冷启动走的后台静默刷新那条路也一并补量
+> - **搜索输入即联想**：输入框空着时显示历史与热搜，**敲下第一个字**就开始出建议（300 毫秒防抖、命中本地缓存零请求，最多 8 个源 × 24 条去重合并）；电视端遥控器打字时右侧实时刷新，按下确认才进结果页，结果页只认「真正搜的那个词」，不会再被半截输入带跑
+> - **投屏一键即走**：点投屏按钮**立刻开始搜设备**，不用再手点刷新；探到一台显示一台，不再被某台死设备卡住四五秒（以前点完要等 7 秒才出设备）
+> - **投上电视手机立刻静音**：以前跨线程调 `pause()` 抛异常又被吞掉，电视在放、手机也在放，声音叠在一起；现在切回播放器所在线程暂停，并加了一道进入投屏状态时的兜底
+>
+> v2.8.4 的**片名匹配**、v2.8.1 的**首页不依赖采集源 / 详情页秒开 / RTSP·RTP 直连**全部保留。
 
 > **v2.8.4 更新**：彻底修掉「点 A 片打开 B 片」，长按快进终于能在画面上看见，网速单位不再离谱。
 >
@@ -270,20 +279,20 @@
 
 ## 下载与安装
 
-**当前版本：[v2.8.4](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v2.8.4)**，发布于 2026-11-13。
+**当前版本：[v2.9.0](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v2.9.0)**，发布于 2026-11-15。
 
-在 [Releases](https://github.com/wgsjjj/LibreTV-AndroidTV/releases) 页面下载 `LibreTV-TV-v2.8.4.apk`，或直接点：
-[下载 v2.8.4](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/download/v2.8.4/LibreTV-TV-v2.8.4.apk)。
+在 [Releases](https://github.com/wgsjjj/LibreTV-AndroidTV/releases) 页面下载 `LibreTV-TV-v2.9.0.apk`，或直接点：
+[下载 v2.9.0](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/download/v2.9.0/LibreTV-TV-v2.9.0.apk)。
 
 拷贝到 U 盘插到电视上安装，或用 adb 安装：
 
 ```
-adb install LibreTV-TV-v2.8.4.apk
+adb install LibreTV-TV-v2.9.0.apk
 ```
 
-- 版本：`2.8.4`（versionCode `174`），约 33 MB，Android 5.0 及以上，`arm64-v8a` / `armeabi-v7a`
-- 签名 SHA-256：`cc66c9268c8e2adb22d37cd9f2a07f8e47fa134b0551ee08b8c4b91d9cfa67e2`
-- 文件 SHA-256：`1bccf478d59d2333d61a44c53cc1340c0f70ef8e37ce1d8acb5634388cad72e9`
+- 版本：`2.9.0`（versionCode `192`），约 33 MB，Android 5.0 及以上，`arm64-v8a` / `armeabi-v7a`
+- 签名 SHA-256：`9793868235d6b887702cc276237b7437389d0d48ad4782864e345f7874429b46`
+- 文件 SHA-256：`565e9614b796b5cf79c6b95ae49b1dc12847d4c731a4dc794efebf6381766ce4`
 
 > **签名与 v2.6 起的所有版本一致，可以直接覆盖安装**，片源、收藏、播放历史、跳过设置都会保留。
 > 只有从 v2.5 / v2.5.16 或更早版本升级时才会提示「签名不一致」，那种情况需要先卸载（片源与收藏会一起清掉，装好后重新添加即可）。
