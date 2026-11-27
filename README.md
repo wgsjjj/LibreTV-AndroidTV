@@ -19,7 +19,7 @@
 | 👪 家长控制 | PIN 锁、可用时长、退出即上锁、扫码设置 |
 | ⚙️ 其他 | 开机自启与启动页选择、遥控器按键自定义、公告条、调试日志与导出、横屏锁定与电视 Launcher 入口 |
 
-**当前版本：v3.0.0（2026-11-26）** · [前往下载](https://github.com/wgsjjj/WBOX-AndroidTV/releases/tag/v3.0.0)
+**当前版本：v3.0.0（2026-11-26）** · [前往下载](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v3.0.0)
 
 > **v3.0.0 更新**：接入 TVBox spider 引擎，新增体育专区，App 全面改名 WBOX。
 >
@@ -282,10 +282,10 @@
 
 ## 下载与安装
 
-**当前版本：[v3.0.0](https://github.com/wgsjjj/WBOX-AndroidTV/releases/tag/v3.0.0)**，发布于 2026-11-26。
+**当前版本：[v3.0.0](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/tag/v3.0.0)**，发布于 2026-11-26。
 
-在 [Releases](https://github.com/wgsjjj/WBOX-AndroidTV/releases) 页面下载 `WBOX-v3.0.0.apk`，或直接点：
-[下载 v3.0.0](https://github.com/wgsjjj/WBOX-AndroidTV/releases/download/v3.0.0/WBOX-v3.0.0.apk)。
+在 [Releases](https://github.com/wgsjjj/LibreTV-AndroidTV/releases) 页面下载 `WBOX-v3.0.0.apk`，或直接点：
+[下载 v3.0.0](https://github.com/wgsjjj/LibreTV-AndroidTV/releases/download/v3.0.0/WBOX-v3.0.0.apk)。
 
 拷贝到 U 盘插到电视上安装，或用 adb 安装：
 
